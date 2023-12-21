@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <title>Sorteio Fim De Ano</title>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/jquery371.js"></script>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card position-absolute top-50 start-50 translate-middle" id="sorting-card" style="width: 35rem;">
+            <div class="card-body">
+                <h1 class="text-center text-danger">Sorteio</h1>
+                <h3 class="text-center">Rifa de Final de Ano</h3><br><br>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-danger" type="button" id="sortingButton">Sortear</button>
+                </div>
+                <div class="text-center" id="result"></div><br>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-danger" type="button" id="attendantButton">Participantes</button>
+                </div>
+                <br>
+                <div class="text-center scrollable">
+                    <table class="table table-danger table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Número</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bodyContent">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script/sortingFileJSON.js"></script>
+</body>
+
+</html>
