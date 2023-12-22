@@ -4,7 +4,8 @@
 }
 
 body{
-    background-image: url("../images/makeTheme.png");
+    background-image: url("../images/bkgImage.png");
+    background-repeat: no-repeat;
 }
 
 #sorting-card{
